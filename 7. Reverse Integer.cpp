@@ -7,6 +7,7 @@ public:
         {
             int digit = x%10;
             
+            // Outside the signed 32-bit integer range:- ans*10 > INT_MAX and ans*10 < INT_MIN
             if((ans > INT_MAX/10) || (ans < INT_MIN/10))
             {
                 return 0;
